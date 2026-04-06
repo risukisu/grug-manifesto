@@ -1,0 +1,263 @@
+/* ─── Reset & Base ─── */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #F5F0E8;
+  color: #2C2418;
+  font-family: 'Lora', Georgia, serif;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Layout ─── */
+
+main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 3rem;
+}
+
+/* ─── Title Section ─── */
+
+.title-section {
+  margin-bottom: 3rem;
+}
+
+.the-label {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+  color: #7D6D5D;
+  margin-bottom: 0.6rem;
+}
+
+h1 {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 700;
+  line-height: 0.95;
+  margin-bottom: 0.8rem;
+}
+
+h1 .title-line {
+  display: block;
+  font-size: clamp(2.8rem, 8vw, 3.6rem);
+  color: #2C2418;
+}
+
+.manifesto-label {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.35em;
+  color: #C17817;
+  margin-bottom: 1.2rem;
+}
+
+.amber-rule {
+  height: 1.5px;
+  background: #C17817;
+}
+
+.amber-rule.short {
+  width: 5.5rem;
+}
+
+/* ─── Preamble ─── */
+
+.preamble {
+  margin-bottom: 3.5rem;
+}
+
+.preamble p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #2C2418;
+}
+
+.preamble blockquote {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #5C3D1E;
+  padding-left: 1.5rem;
+  margin: 1.4rem 0;
+  border: none;
+}
+
+/* ─── Twelve Dots ─── */
+
+.twelve-dots {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  padding: 1.5rem 0;
+}
+
+.twelve-dots span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #C17817;
+  flex-shrink: 0;
+}
+
+/* ─── Rules ─── */
+
+.rules {
+  margin-bottom: 4rem;
+}
+
+.rule {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+  padding: 1.8rem 0;
+  border-bottom: 1px dashed #D4C4A8;
+}
+
+.rule:last-child {
+  border-bottom: none;
+}
+
+.rule-num {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 1;
+  color: #D4A870;
+  flex-shrink: 0;
+  min-width: 3rem;
+  padding-top: 0.15rem;
+}
+
+.rule-content h2 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #2C2418;
+  margin-bottom: 0.4rem;
+  line-height: 1.3;
+}
+
+.rule-content p {
+  font-size: 0.9rem;
+  color: #7D6D5D;
+  line-height: 1.55;
+}
+
+/* ─── Grug Says ─── */
+
+.grug-says {
+  padding: 3rem 0;
+  margin-bottom: 2rem;
+}
+
+.grug-says h3 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.3em;
+  color: #C17817;
+  margin-bottom: 0.6rem;
+}
+
+.grug-text {
+  margin-top: 2rem;
+}
+
+.grug-text p {
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 1.05rem;
+  color: #5C3D1E;
+  line-height: 1.7;
+  margin-bottom: 0.8rem;
+}
+
+.grug-text .grug-accent {
+  font-size: 1.2rem;
+  color: #C17817;
+  margin-top: 1rem;
+}
+
+/* ─── Footer ─── */
+
+footer {
+  padding-top: 1rem;
+  border-top: 1px solid #D4C4A8;
+}
+
+.footer-links {
+  text-align: center;
+  margin-top: 1rem;
+  font-family: 'Geist Mono', monospace;
+  font-size: 0.75rem;
+  color: #7D6D5D;
+}
+
+.footer-links a {
+  color: #7D6D5D;
+  text-decoration: none;
+  border-bottom: 1px solid #D4C4A8;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #C17817;
+  border-color: #C17817;
+}
+
+.footer-sep {
+  margin: 0 0.5rem;
+}
+
+.footer-year {
+  text-align: center;
+  font-family: 'Geist Mono', monospace;
+  font-size: 0.65rem;
+  color: rgba(125, 109, 93, 0.4);
+  margin-top: 0.6rem;
+  letter-spacing: 0.1em;
+}
+
+/* ─── Responsive ─── */
+
+@media (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
+
+  main {
+    padding: 2.5rem 1.2rem 2rem;
+  }
+
+  .rule {
+    gap: 0.8rem;
+    padding: 1.4rem 0;
+  }
+
+  .rule-num {
+    font-size: 1.8rem;
+    min-width: 2.4rem;
+  }
+
+  .twelve-dots {
+    gap: 0.7rem;
+  }
+
+  .twelve-dots span {
+    width: 5px;
+    height: 5px;
+  }
+}
